@@ -1,0 +1,4 @@
+v 4
+file . "std_libs.vhdl" "c153a3323ef2534dde5256301e7d1f8f7fe60a0a" "20210731045037.904":
+  entity my_ent at 2( 22) + 0 on 11;
+  architecture my_arch of my_ent at 20( 535) + 0 on 12;
