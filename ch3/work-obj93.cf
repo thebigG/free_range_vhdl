@@ -1,4 +1,7 @@
 v 4
+file . "simple_block.vhdl" "057b65fd69249821a38b67069dbb8196c14a65ba" "20210801051238.612":
+  entity circuit1 at 4( 71) + 0 on 13;
+  architecture circuit1_arc of circuit1 at 14( 248) + 0 on 14;
 file . "std_libs.vhdl" "c153a3323ef2534dde5256301e7d1f8f7fe60a0a" "20210731045037.904":
   entity my_ent at 2( 22) + 0 on 11;
   architecture my_arch of my_ent at 20( 535) + 0 on 12;
