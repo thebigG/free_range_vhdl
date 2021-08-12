@@ -3,7 +3,7 @@
 
 analyze:
 		@cd $(SRC_DIR)
-		@mkdir build
+		@mkdir -p build
 		@cd build
 		@ghdl -a ../*.vhdl
 
