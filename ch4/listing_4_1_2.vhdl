@@ -17,6 +17,6 @@ begin
                D2 when (SEL = "10") else
                D1 when (SEL = "01") else
                D0 when (SEL = "00") else
-               "0";
+               '0';
 end mux4t1;
      
