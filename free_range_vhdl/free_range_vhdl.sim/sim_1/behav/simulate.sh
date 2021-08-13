@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim my_ckt_f3_behav -key {Behavioral:sim_1:Functional:my_ckt_f3} -tclbatch my_ckt_f3.tcl -log simulate.log
+ExecStep $xv_path/bin/xsim my_4t1_mux_behav -key {Behavioral:sim_1:Functional:my_4t1_mux} -tclbatch my_4t1_mux.tcl -log simulate.log
