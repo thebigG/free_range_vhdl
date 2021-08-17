@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sun Aug 15 22:05:53 2021
-# Process ID: 29101
+# Start of session at: Mon Aug 16 19:43:21 2021
+# Process ID: 40962
 # Current directory: /home/lorenzogomez/free_range_vhdl/free_range_vhdl
 # Command line: vivado free_range_vhdl.xpr
 # Log file: /home/lorenzogomez/free_range_vhdl/free_range_vhdl/vivado.log
@@ -11,115 +11,36 @@
 #-----------------------------------------------------------
 start_gui
 open_project free_range_vhdl.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/lorenzogomez/free_range_vhdl/ch4/listing_4_14.vhdl'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'.
 update_compile_order -fileset sources_1
+remove_files -fileset sim_1 /home/lorenzogomez/free_range_vhdl/ch4/listing_4_14.vhdl
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch4/listing_4_14.vhdl
+add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch4/listing_4_17.vhdl
 update_compile_order -fileset sim_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'my_4t1_mux' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-xvhdl -m64 --relax -prj my_4t1_mux_vhdl.prj
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch4/listing_4_1_2.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity my_4t1_mux
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d8f1febbe5f54889b75d62c2611e45f1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot my_4t1_mux_behav xil_defaultlib.my_4t1_mux -log elaborate.log 
-Using 8 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling architecture mux4t1 of entity xil_defaultlib.my_4t1_mux
-Built simulation snapshot my_4t1_mux_behav
-
-****** Webtalk v2016.2 (64-bit)
-  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
-  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
-source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/my_4t1_mux_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun Aug 15 22:42:31 2021...
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "my_4t1_mux_behav -key {Behavioral:sim_1:Functional:my_4t1_mux} -tclbatch {my_4t1_mux.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source my_4t1_mux.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'my_4t1_mux_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-set_property top my_ckt_f3 [get_filesets sim_1]
+set_property top my_ckt_f3_concat [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
-set_property top_arch f3_4 [get_filesets sim_1]
 update_compile_order -fileset sim_1
 launch_simulation
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'my_ckt_f3' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'my_ckt_f3_concat' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-xvhdl -m64 --relax -prj my_ckt_f3_vhdl.prj
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch4/listing_4_8.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity my_ckt_f3
-ERROR: [VRFC 10-486] character '1' is not in type boolean [/home/lorenzogomez/free_range_vhdl/ch4/listing_4_8.vhdl:21]
-ERROR: [VRFC 10-486] character '0' is not in type boolean [/home/lorenzogomez/free_range_vhdl/ch4/listing_4_8.vhdl:22]
-ERROR: [VRFC 10-1504] unit f3_4 ignored due to previous errors [/home/lorenzogomez/free_range_vhdl/ch4/listing_4_8.vhdl:18]
-INFO: [VRFC 10-240] VHDL file /home/lorenzogomez/free_range_vhdl/ch4/listing_4_8.vhdl ignored due to errors
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xvhdl.log'
-ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xvhdl.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-update_compile_order -fileset sources_1
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'my_ckt_f3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-xvhdl -m64 --relax -prj my_ckt_f3_vhdl.prj
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch4/listing_4_8.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity my_ckt_f3
+xvhdl -m64 --relax -prj my_ckt_f3_concat_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch4/listing_4_17.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_ckt_f3_concat
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
 Vivado Simulator 2016.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d8f1febbe5f54889b75d62c2611e45f1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot my_ckt_f3_behav xil_defaultlib.my_ckt_f3 -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d8f1febbe5f54889b75d62c2611e45f1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot my_ckt_f3_concat_behav xil_defaultlib.my_ckt_f3_concat -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -128,25 +49,25 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package ieee.std_logic_1164
-Compiling architecture f3_1 of entity xil_defaultlib.my_ckt_f3
-Built simulation snapshot my_ckt_f3_behav
+Compiling architecture f3_8 of entity xil_defaultlib.my_ckt_f3_concat
+Built simulation snapshot my_ckt_f3_concat_behav
 
 ****** Webtalk v2016.2 (64-bit)
   **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
   **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
-source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/my_ckt_f3_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun Aug 15 22:43:56 2021...
+source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/my_ckt_f3_concat_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Aug 16 21:39:26 2021...
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "my_ckt_f3_behav -key {Behavioral:sim_1:Functional:my_ckt_f3} -tclbatch {my_ckt_f3.tcl} -log {simulate.log}"
+   with args "my_ckt_f3_concat_behav -key {Behavioral:sim_1:Functional:my_ckt_f3_concat} -tclbatch {my_ckt_f3_concat.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2016.2
 Time resolution is 1 ps
-source my_ckt_f3.tcl
+source my_ckt_f3_concat.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -157,14 +78,9 @@ source my_ckt_f3.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'my_ckt_f3_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'my_ckt_f3_concat_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch4/listing_4_15.vhdl
-update_compile_order -fileset sim_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Aug 15 23:09:41 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 16 21:39:43 2021...
