@@ -1,8 +1,17 @@
-# Experimenting with VHDL
+# Learning VHDL
 
-To run vhdl code:
+This repo is a collection of examples  as I learn VHDL from [Free Range VHDL](http://freerangefactory.org/pdf/df344hdh4h8kjfh3500ft2/free_range_vhdl.pdf) 
+
+The `free_range_vhdl/free_range_vhdl.xpr` file is a [vivado](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive.html) project. 
+
+# To run vhdl code from the shell:
 ```
-First, you have to compile the file; this is called analysis of a design file in VHDL terms. Run ghdl -a hello.vhdl in the shell. This command creates or updates a file work-obj93.cf, which describes the library work.
-Then, run ghdl -e hello_world in the shell. Command -e means elaborate, which is used to build a design, with the hello_world entity at the top of the hierarchy.
+export $SRC_DIR=ch5
+make
+cd ch5/build
+
+ghdl -r {ENTITY_NAME}
 ```
+
+Note that `ch5` can be any directory that has vhdl source code in it.
 
