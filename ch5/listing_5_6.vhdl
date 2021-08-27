@@ -1,3 +1,5 @@
+-- F_OUT(A,B,C) = !A*!B*!C + B*C
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 
