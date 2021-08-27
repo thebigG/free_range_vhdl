@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Aug 21 14:31:40 2021
-# Process ID: 136343
+# Start of session at: Thu Aug 26 22:22:55 2021
+# Process ID: 25516
 # Current directory: /home/lorenzogomez/free_range_vhdl/free_range_vhdl
 # Command line: vivado free_range_vhdl.xpr
 # Log file: /home/lorenzogomez/free_range_vhdl/free_range_vhdl/vivado.log
@@ -17,144 +17,32 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'.
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch5/listing_5_3.vhdl
-WARNING: [filemgmt 56-12] File '/home/lorenzogomez/free_range_vhdl/ch5/listing_5_3.vhdl' cannot be added to the project because it already exists in the project, skipping this file
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'ONE_A' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-xvhdl -m64 --relax -prj ONE_A_vhdl.prj
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch4/exercise_1_a.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity ONE_A
-INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d8f1febbe5f54889b75d62c2611e45f1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ONE_A_behav xil_defaultlib.ONE_A -log elaborate.log 
-Using 8 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling architecture arch_one_a of entity xil_defaultlib.one_a
-Built simulation snapshot ONE_A_behav
-
-****** Webtalk v2016.2 (64-bit)
-  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
-  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
-source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/ONE_A_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sat Aug 21 14:34:18 2021...
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "ONE_A_behav -key {Behavioral:sim_1:Functional:ONE_A} -tclbatch {ONE_A.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source ONE_A.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'ONE_A_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-set_property top my_xor [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  /home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl]
+undo
+INFO: [Common 17-17] undo 'set_property is_enabled false [get_files  /home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl]'
+update_compile_order -fileset sim_1
+set_property top mux_8t1 [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 update_compile_order -fileset sim_1
 launch_simulation
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'my_xor' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'mux_8t1' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-xvhdl -m64 --relax -prj my_xor_vhdl.prj
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch5/listing_5_3.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity my_xor
-INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d8f1febbe5f54889b75d62c2611e45f1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot my_xor_behav xil_defaultlib.my_xor -log elaborate.log 
-Using 8 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling architecture behav of entity xil_defaultlib.my_xor
-Built simulation snapshot my_xor_behav
-
-****** Webtalk v2016.2 (64-bit)
-  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
-  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
-source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/my_xor_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sat Aug 21 14:34:35 2021...
-INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "my_xor_behav -key {Behavioral:sim_1:Functional:my_xor} -tclbatch {my_xor.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source my_xor.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'my_xor_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch5/listing_5_4.vhdl
-update_compile_order -fileset sim_1
-set_property top my_system [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-update_compile_order -fileset sim_1
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'my_system' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-xvhdl -m64 --relax -prj my_system_vhdl.prj
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch5/listing_5_4.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity my_system
-ERROR: [VRFC 10-1012] mismatch on label ; expected my_system [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_4.vhdl:7]
-ERROR: [VRFC 10-1504] unit my_system ignored due to previous errors [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_4.vhdl:4]
-INFO: [VRFC 10-240] VHDL file /home/lorenzogomez/free_range_vhdl/ch5/listing_5_4.vhdl ignored due to errors
+xvhdl -m64 --relax -prj mux_8t1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl" into library xil_defaultlib
+ERROR: [VRFC 10-149] 'std_logic' is not compiled in library ieee [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:3]
+INFO: [VRFC 10-307] analyzing entity mux_8t1
+ERROR: [VRFC 10-91] std_logic_vecto is not declared [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:6]
+ERROR: [VRFC 10-91] std_logic_vector is not declared [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:7]
+ERROR: [VRFC 10-91] std_logic is not declared [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:8]
+ERROR: [VRFC 10-1012] mismatch on label ; expected mux_8t1 [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:10]
+ERROR: [VRFC 10-1504] unit mux_8t1 ignored due to previous errors [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:5]
+INFO: [VRFC 10-240] VHDL file /home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl ignored due to errors
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-99] Step results log file:'/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xvhdl.log'
 ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xvhdl.log' file for more information.
@@ -162,18 +50,21 @@ ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct 
 ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 launch_simulation
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'my_system' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'mux_8t1' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-xvhdl -m64 --relax -prj my_system_vhdl.prj
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch5/listing_5_4.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity my_system
-ERROR: [VRFC 10-469] cannot update 'in' object f [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_4.vhdl:19]
-ERROR: [VRFC 10-469] cannot update 'in' object q [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_4.vhdl:22]
-ERROR: [VRFC 10-1504] unit behav ignored due to previous errors [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_4.vhdl:9]
-INFO: [VRFC 10-240] VHDL file /home/lorenzogomez/free_range_vhdl/ch5/listing_5_4.vhdl ignored due to errors
+xvhdl -m64 --relax -prj mux_8t1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl" into library xil_defaultlib
+ERROR: [VRFC 10-149] 'std_logic' is not compiled in library ieee [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:3]
+INFO: [VRFC 10-307] analyzing entity mux_8t1
+ERROR: [VRFC 10-91] std_logic_vecto is not declared [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:6]
+ERROR: [VRFC 10-91] std_logic_vector is not declared [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:7]
+ERROR: [VRFC 10-91] std_logic is not declared [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:8]
+ERROR: [VRFC 10-1012] mismatch on label ; expected mux_8t1 [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:10]
+ERROR: [VRFC 10-1504] unit mux_8t1 ignored due to previous errors [/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl:5]
+INFO: [VRFC 10-240] VHDL file /home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl ignored due to errors
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-99] Step results log file:'/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xvhdl.log'
 ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xvhdl.log' file for more information.
@@ -181,20 +72,20 @@ ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct 
 ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 launch_simulation
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'my_system' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'mux_8t1' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-xvhdl -m64 --relax -prj my_system_vhdl.prj
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch5/listing_5_4.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity my_system
+xvhdl -m64 --relax -prj mux_8t1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux_8t1
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
 Vivado Simulator 2016.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d8f1febbe5f54889b75d62c2611e45f1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot my_system_behav xil_defaultlib.my_system -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d8f1febbe5f54889b75d62c2611e45f1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot mux_8t1_behav xil_defaultlib.mux_8t1 -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -203,25 +94,25 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package ieee.std_logic_1164
-Compiling architecture behav of entity xil_defaultlib.my_system
-Built simulation snapshot my_system_behav
+Compiling architecture mux_8t1_arc of entity xil_defaultlib.mux_8t1
+Built simulation snapshot mux_8t1_behav
 
 ****** Webtalk v2016.2 (64-bit)
   **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
   **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
-source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/my_system_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sat Aug 21 15:00:15 2021...
+source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/mux_8t1_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug 26 23:15:25 2021...
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "my_system_behav -key {Behavioral:sim_1:Functional:my_system} -tclbatch {my_system.tcl} -log {simulate.log}"
+   with args "mux_8t1_behav -key {Behavioral:sim_1:Functional:mux_8t1} -tclbatch {mux_8t1.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2016.2
 Time resolution is 1 ps
-source my_system.tcl
+source mux_8t1.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -232,32 +123,26 @@ source my_system.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'my_system_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mux_8t1_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch5/listing_5_6.vhdl
-update_compile_order -fileset sim_1
-set_property top my_ex [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-update_compile_order -fileset sim_1
 launch_simulation
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'my_ex' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'mux_8t1' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
-xvhdl -m64 --relax -prj my_ex_vhdl.prj
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch5/listing_5_6.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity my_ex
+xvhdl -m64 --relax -prj mux_8t1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux_8t1
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
 Vivado Simulator 2016.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d8f1febbe5f54889b75d62c2611e45f1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot my_ex_behav xil_defaultlib.my_ex -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d8f1febbe5f54889b75d62c2611e45f1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot mux_8t1_behav xil_defaultlib.mux_8t1 -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -266,25 +151,25 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package ieee.std_logic_1164
-Compiling architecture silly_example of entity xil_defaultlib.my_ex
-Built simulation snapshot my_ex_behav
+Compiling architecture mux_8t1_arc of entity xil_defaultlib.mux_8t1
+Built simulation snapshot mux_8t1_behav
 
 ****** Webtalk v2016.2 (64-bit)
   **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
   **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
-source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/my_ex_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sat Aug 21 15:41:49 2021...
+source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/mux_8t1_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug 26 23:26:26 2021...
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "my_ex_behav -key {Behavioral:sim_1:Functional:my_ex} -tclbatch {my_ex.tcl} -log {simulate.log}"
+   with args "mux_8t1_behav -key {Behavioral:sim_1:Functional:mux_8t1} -tclbatch {mux_8t1.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2016.2
 Time resolution is 1 ps
-source my_ex.tcl
+source mux_8t1.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -295,9 +180,9 @@ source my_ex.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'my_ex_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mux_8t1_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 21 15:47:08 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 26 23:27:25 2021...

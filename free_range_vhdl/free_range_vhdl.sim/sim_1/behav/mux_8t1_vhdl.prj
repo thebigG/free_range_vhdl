@@ -1,5 +1,5 @@
 # compile vhdl design source files
-vhdl xil_defaultlib  "../../../../ch5/listing_5_6.vhdl"
+vhdl xil_defaultlib  "../../../../ch5/listing_5_8.vhdl"
 
 # Do not sort compile order
 nosort
