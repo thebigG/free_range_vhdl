@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sun Aug 15 22:05:53 2021
-# Process ID: 29101
+# Start of session at: Thu Aug 26 22:22:55 2021
+# Process ID: 25516
 # Current directory: /home/lorenzogomez/free_range_vhdl/free_range_vhdl
 # Command line: vivado free_range_vhdl.xpr
 # Log file: /home/lorenzogomez/free_range_vhdl/free_range_vhdl/vivado.log
@@ -11,31 +11,24 @@
 #-----------------------------------------------------------
 start_gui
 open_project free_range_vhdl.xpr
-update_compile_order -fileset sources_1
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch4/listing_4_14.vhdl
+add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl
 update_compile_order -fileset sim_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-launch_simulation
-source my_4t1_mux.tcl
-close_sim
+set_property is_enabled false [get_files  /home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl]
+undo
+update_compile_order -fileset sim_1
 # Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
 set_property source_mgmt_mode None [current_project]
-set_property top my_ckt_f3 [get_filesets sim_1]
+set_property top mux_8t1 [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
-set_property top_arch f3_4 [get_filesets sim_1]
 # Re-enabling previously disabled source management mode.
 set_property source_mgmt_mode All [current_project]
 update_compile_order -fileset sim_1
 launch_simulation
-update_compile_order -fileset sources_1
 launch_simulation
-source my_ckt_f3.tcl
+launch_simulation
+source mux_8t1.tcl
 close_sim
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch4/listing_4_15.vhdl
-update_compile_order -fileset sim_1
+launch_simulation
+source mux_8t1.tcl
+close_sim

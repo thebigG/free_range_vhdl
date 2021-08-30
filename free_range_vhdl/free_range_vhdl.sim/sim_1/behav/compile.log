@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch5/listing_5_8.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity mux_8t1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch5/listing_5_11.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_example
