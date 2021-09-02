@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sun Aug 29 21:06:36 2021">
+<application name="pa" timeStamp="Thu Sep  2 00:18:49 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="e5be9f4384d642c28571f3cf2ca0595e" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -17,7 +17,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="19" type="JavaHandler"/>
+<property name="AddSources" value="21" type="JavaHandler"/>
 <property name="EditDelete" value="1" type="JavaHandler"/>
 <property name="EditSimulationSets" value="1" type="JavaHandler"/>
 <property name="EditUndo" value="2" type="JavaHandler"/>
@@ -35,55 +35,104 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FINISH, Finish" value="2" type="GuiResourceData"/>
 <property name="NEXT, Next " value="2" type="GuiResourceData"/>
 <property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Add Sources..." value="2" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="4" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SET_AS_TOP, Set as Top" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="2" type="GuiResourceData"/>
 <property name="PAResourceCommand.PACommandNames_SIMULATION_RESET, Reset Simulation" value="2" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN, Run Simulation" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, listing_5_11.vhdl], 5, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, listing_5_11.vhdl], 5, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, listing_5_9.vhdl], 5, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, listing_5_9.vhdl], 5, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN, Run Simulation" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, exercise_1_a.vhdl], 5, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, exercise_1_a.vhdl], 5, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, exercise_1_a.vhdl], 6, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, exercise_1_a.vhdl], 6, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, exercise_1_a_case.vhdl], 5, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, exercise_1_a_case.vhdl], 5, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files], 4" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Syntax Error Files, listing_5_9.vhdl], 5, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Syntax Error Files, listing_5_9.vhdl], 5, false, false, false, false, false, true" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Syntax Error Files, listing_5_9.vhdl], 5, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Syntax Error Files], 4" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Syntax Error Files], 4, true" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Syntax Error Files], 4, true, false, false, false, false, true" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, mux_8t1 - mux_8t1_arc (listing_5_8.vhdl" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, mux_8to1_ce - mux_8to1_ce_arch (listing_5_9.vhdl" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, my_example - my_soln_exam (listing_5_11.vhdl" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, ONE_A - ARCH_ONE_A (exercise_1_a.vhdl" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, exercise_1_a - exercise_1_a_arch (exercise_1_a.vhdl" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, my_ckt_f3_concat - f3_8 (listing_4_17.vhdl" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, my_ex - silly_example (listing_5_6.vhdl" value="3" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 3, true" value="3" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 3, true, false, false, false, true, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 2, true" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="2" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="4" type="GuiResourceData"/>
-<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="2" type="GuiResourceData"/>
-<property name="listing_5_11.vhdl, 145, 176" value="1" type="GuiResourceData"/>
-<property name="listing_5_11.vhdl, 146, 163" value="1" type="GuiResourceData"/>
-<property name="listing_5_11.vhdl, 210, 319" value="1" type="GuiResourceData"/>
-<property name="listing_5_11.vhdl, 24, 156" value="1" type="GuiResourceData"/>
-<property name="listing_5_11.vhdl, 298, 35" value="1" type="GuiResourceData"/>
-<property name="listing_5_11.vhdl, 403, 272" value="1" type="GuiResourceData"/>
-<property name="listing_5_11.vhdl, 49, 161" value="1" type="GuiResourceData"/>
-<property name="listing_5_11.vhdl, 49, 161, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="listing_5_11.vhdl, 53, 236" value="1" type="GuiResourceData"/>
-<property name="listing_5_11.vhdl, 54, 252" value="1" type="GuiResourceData"/>
-<property name="listing_5_9.vhdl, 172, 411" value="1" type="GuiResourceData"/>
-<property name="listing_5_9.vhdl, 172, 416" value="1" type="GuiResourceData"/>
-<property name="listing_5_9.vhdl, 174, 427" value="1" type="GuiResourceData"/>
-<property name="listing_5_9.vhdl, 419, 72" value="1" type="GuiResourceData"/>
-<property name="listing_5_9.vhdl, 428, 114" value="1" type="GuiResourceData"/>
-<property name="listing_5_9.vhdl, 47, 427" value="1" type="GuiResourceData"/>
-<property name="listing_5_9.vhdl, 515, 86" value="1" type="GuiResourceData"/>
-<property name="listing_5_9.vhdl, 53, 449" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="3" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="2" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 105, 65" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 111, 41" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 111, 51" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 111, 51, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 177, 125" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 177, 18" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 182, 188" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 183, 203" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 184, 100" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 184, 109" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 190, 183" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 195, 215" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 214, 199" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 215, 170" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 218, 124" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 226, 200" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 235, 194" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 236, 259" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 236, 274" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 330, 191" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 331, 248" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 370, 185" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 440, 188" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 46, 107" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 46, 99" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 46, 99, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 792, 371" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a.vhdl, 980, 388" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 113, 99" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 113, 99, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 122, 223" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 122, 223, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 129, 249" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 134, 162" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 146, 251" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 147, 253" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 151, 99" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 152, 168" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 156, 162" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 159, 282" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 162, 223" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 162, 223, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 172, 169" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 173, 178" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 173, 178, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 191, 231" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 191, 231, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 197, 120" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 197, 120, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 204, 144" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 24, 316" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 244, 76" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 280, 234" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 324, 178" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 334, 265" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 34, 30" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 41, 19" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 432, 119" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 438, 127" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 44, 175" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 44, 175, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 443, 128" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 449, 122" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 450, 135" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 55, 308" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 571, 80" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 77, 47" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 77, 47, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 78, 36" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 93, 99" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 93, 99, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 94, 172" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 94, 172, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="exercise_1_a_case.vhdl, 97, 192" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="20" type="GuiMode"/>
+<property name="GuiMode" value="21" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="19" type="TclMode"/>
+<property name="TclMode" value="20" type="TclMode"/>
 </item>
 </section>
 </application>
