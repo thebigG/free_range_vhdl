@@ -2,11 +2,11 @@
 # Webtalk v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sun Aug 29 20:51:19 2021
-# Process ID: 139224
+# Start of session at: Sun Sep  5 23:10:06 2021
+# Process ID: 52307
 # Current directory: /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav
-# Command line: wbtcv -mode batch -source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/my_example_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv -mode batch -source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/d_ff_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/webtalk.log
 # Journal file: /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/webtalk.jou
 #-----------------------------------------------------------
-source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/my_example_behav/webtalk/xsim_webtalk.tcl -notrace
+source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/d_ff_behav/webtalk/xsim_webtalk.tcl -notrace

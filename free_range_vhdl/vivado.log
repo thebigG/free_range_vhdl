@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Wed Sep  1 23:02:22 2021
-# Process ID: 194515
+# Start of session at: Sun Sep  5 22:55:37 2021
+# Process ID: 51480
 # Current directory: /home/lorenzogomez/free_range_vhdl/free_range_vhdl
 # Command line: vivado free_range_vhdl.xpr
 # Log file: /home/lorenzogomez/free_range_vhdl/free_range_vhdl/vivado.log
@@ -17,10 +17,161 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'.
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch5/exercise_1_a.vhdl
+add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl
 update_compile_order -fileset sim_1
+set_property top d_ff [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'd_ff' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
+xvhdl -m64 --relax -prj d_ff_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity d_ff
+ERROR: [VRFC 10-1012] mismatch on label ; expected my_d_ff [/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl:20]
+ERROR: [VRFC 10-1504] unit my_d_ff ignored due to previous errors [/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl:11]
+INFO: [VRFC 10-240] VHDL file /home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'd_ff' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
+xvhdl -m64 --relax -prj d_ff_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity d_ff
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d8f1febbe5f54889b75d62c2611e45f1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot d_ff_behav xil_defaultlib.d_ff -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling architecture my_d_ff of entity xil_defaultlib.d_ff
+Built simulation snapshot d_ff_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/d_ff_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep  5 23:05:28 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "d_ff_behav -key {Behavioral:sim_1:Functional:d_ff} -tclbatch {d_ff.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source d_ff.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'd_ff_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+add_bp {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} 15
+add_bp {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} 17
+remove_bps -file {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} -line 15
+add_bp {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} 15
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'd_ff' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
+xvhdl -m64 --relax -prj d_ff_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity d_ff
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d8f1febbe5f54889b75d62c2611e45f1 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot d_ff_behav xil_defaultlib.d_ff -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling architecture my_d_ff of entity xil_defaultlib.d_ff
+Built simulation snapshot d_ff_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav/xsim.dir/d_ff_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep  5 23:10:06 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/lorenzogomez/free_range_vhdl/free_range_vhdl/free_range_vhdl.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "d_ff_behav -key {Behavioral:sim_1:Functional:d_ff} -tclbatch {d_ff.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source d_ff.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'd_ff_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+add_bp {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} 17
+add_bp {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} 15
+remove_bps -file {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} -line 15
+remove_bps -file {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} -line 17
+add_bp {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} 17
+remove_bps -file {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} -line 17
+add_bp {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} 17
+remove_bps -file {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} -line 17
+add_bp {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} 15
+remove_bps -file {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} -line 15
+add_bp {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} 15
+remove_bps -file {/home/lorenzogomez/free_range_vhdl/ch7/listing_7_1.vhdl} -line 15
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch5/exercise_1_a_case.vhdl
+add_files -fileset sim_1 -norecurse /home/lorenzogomez/free_range_vhdl/ch7/listing_7_2.vhdl
 update_compile_order -fileset sim_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Sep  2 00:18:52 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  5 23:34:47 2021...
