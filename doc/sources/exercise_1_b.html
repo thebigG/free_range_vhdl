@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>./ch4/exercise_1_b.vhdl</title>
+    <link rel="stylesheet" type="text/css" href="../style/vhdocl.css">
+</head>
+<body>
+
+<table border="0" width="100%"><tr><td align="left">
+
+</td><td align="center">
+<a href="../index.html">Home</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../hierarchy.html">Hierarchy</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../packages.html">Packages</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../entities.html">Entities</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../instantiations.html">Instantiations</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../sources.html">Sources</a>
+
+</td><td align="right">
+
+</td></tr></table>
+
+<hr>
+
+
+<h1>Source file ch4/exercise_1_b.vhdl</h1>
+
+<p><a href="../../ch4/exercise_1_b.vhdl">Link to file</a></p>
+<table border="0" cellpadding="0"><tr><td><pre>
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 
+10 
+11 
+12 
+13 
+</pre></td><td width="15"></td><td>
+<pre class="vhdlcode">
+<div class="shaded"><span class="vhdldecl">library</span> <span class="vhdlieee">IEEE</span>; 
+</div><span class="vhdldecl">use</span> <span class="vhdlieee">IEEE</span>.<span class="vhdlieee">std_logic_1164</span>.<span class="vhdlword">all</span>; 
+<div class="shaded"> 
+</div><span class="vhdldecl">entity</span> <span class="identifier">ONE_B</span> <span class="vhdlword">is</span> 
+<div class="shaded">    <span class="vhdlword">port</span>(<span class="identifier">A</span>,<span class="identifier">B</span>,<span class="identifier">C</span>,<span class="identifier">D</span> : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic</span>; 
+</div>         <span class="identifier">F</span>       : <span class="vhdlio">out</span> <span class="vhdlieee typeid">std_logic</span>); 
+<div class="shaded"> 
+</div><span class="vhdlword">end</span> <span class="identifier">ONE_B</span>; 
+<div class="shaded"> 
+</div><span class="vhdldecl">architecture</span> <span class="identifier">ARCH_ONE_B</span> <span class="vhdlword">of</span> <span class="identifier">ONE_B</span> <span class="vhdlword">is</span> 
+<div class="shaded"><span class="vhdlword">begin</span> 
+</div>     <span class="identifier">F</span> &lt;= ((<span class="vhdlword">not</span>(<span class="identifier">A</span>) <span class="vhdlword">and</span> <span class="identifier">B</span> <span class="vhdlword">and</span> <span class="identifier">C</span>) <span class="vhdlword">or</span>(<span class="vhdlword">not</span>(<span class="identifier">B</span>) <span class="vhdlword">and</span> <span class="identifier">C</span>) <span class="vhdlword">or</span> (<span class="identifier">B</span> <span class="vhdlword">or</span> <span class="identifier">C</span> <span class="vhdlword">or</span> <span class="vhdlword">not</span>(<span class="identifier">D</span>))); 
+<div class="shaded"><span class="vhdlword">end</span> <span class="identifier">ARCH_ONE_B</span>;</div></pre>
+</td></tr></table>
+
+<hr>
+
+
+Generated on 6 Sep 2021 0:13:26 with <a
+href="http://www.volkerschatz.com/hardware/vhdocl.html">VHDocL</a>
+V? (use install script to install properly)
+
+</body>
+</html>

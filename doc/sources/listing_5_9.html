@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>./ch5/listing_5_9.vhdl</title>
+    <link rel="stylesheet" type="text/css" href="../style/vhdocl.css">
+</head>
+<body>
+
+<table border="0" width="100%"><tr><td align="left">
+
+</td><td align="center">
+<a href="../index.html">Home</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../hierarchy.html">Hierarchy</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../packages.html">Packages</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../entities.html">Entities</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../instantiations.html">Instantiations</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../sources.html">Sources</a>
+
+</td><td align="right">
+
+</td></tr></table>
+
+<hr>
+
+
+<h1>Source file ch5/listing_5_9.vhdl</h1>
+
+<p><a href="../../ch5/listing_5_9.vhdl">Link to file</a></p>
+<table border="0" cellpadding="0"><tr><td><pre>
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 
+10 
+11 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+19 
+20 
+21 
+22 
+23 
+24 
+25 
+26 
+27 
+28 
+29 
+30 
+31 
+</pre></td><td width="15"></td><td>
+<pre class="vhdlcode">
+<div class="shaded"><span class="vhdldecl">library</span> <span class="vhdlieee">IEEE</span>; 
+</div><span class="vhdldecl">use</span> <span class="vhdlieee">IEEE</span>.<span class="vhdlieee">std_logic_1164</span>.<span class="vhdlword">all</span>; 
+<div class="shaded"> 
+</div><span class="vhdldecl">entity</span> <span class="identifier">mux_8to1_ce</span> <span class="vhdlword">is</span> 
+<div class="shaded">   <span class="vhdlword">port</span> (<span class="identifier">Data_in</span> : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic_vector</span> (7 <span class="vhdlword">downto</span> 0); 
+</div>         <span class="identifier">SEL</span>      : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic_vector</span> (2 <span class="vhdlword">downto</span> 0); 
+<div class="shaded">         <span class="identifier">CE</span>       : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic</span>; 
+</div>         <span class="identifier">F_CTRL</span>   : <span class="vhdlio">out</span> <span class="vhdlieee typeid">std_logic</span>); 
+<div class="shaded"> <span class="vhdlword">end</span> <span class="identifier">mux_8to1_ce</span>; 
+</div> 
+<div class="shaded"> <span class="vhdldecl">architecture</span> <span class="identifier">mux_8to1_ce_arch</span> <span class="vhdlword">of</span> <span class="identifier">mux_8to1_ce</span> <span class="vhdlword">is</span> 
+</div> <span class="vhdlword">begin</span> 
+<div class="shaded">    <span class="identifier">my_mux</span>: <span class="vhdlword">process</span>(<span class="identifier">Data_in</span>, <span class="identifier">SEL</span>, <span class="identifier">CE</span>) 
+</div>    <span class="vhdlword">begin</span> 
+<div class="shaded">       <span class="vhdlword">if</span> (<span class="identifier">CE</span> = <span class="vhdlstr">'0'</span>) <span class="vhdlword">then</span> 
+</div>          <span class="identifier">F_CTRL</span> &lt;= <span class="vhdlstr">'0'</span>; 
+<div class="shaded">      <span class="vhdlword">else</span> 
+</div>          <span class="vhdlword">if</span>     (<span class="identifier">SEL</span> = <span class="vhdlstr">&quot;111&quot;</span>) <span class="vhdlword">then</span> <span class="identifier">F_CTRL</span> &lt;= <span class="identifier">Data_in</span>(7); 
+<div class="shaded">          <span class="vhdlword">elsif</span>  (<span class="identifier">SEL</span> = <span class="vhdlstr">&quot;110&quot;</span>) <span class="vhdlword">then</span> <span class="identifier">F_CTRL</span> &lt;= <span class="identifier">Data_in</span>(6); 
+</div>          <span class="vhdlword">elsif</span>  (<span class="identifier">SEL</span> = <span class="vhdlstr">&quot;101&quot;</span>) <span class="vhdlword">then</span> <span class="identifier">F_CTRL</span> &lt;= <span class="identifier">Data_in</span>(5); 
+<div class="shaded">          <span class="vhdlword">elsif</span>  (<span class="identifier">SEL</span> = <span class="vhdlstr">&quot;100&quot;</span>) <span class="vhdlword">then</span> <span class="identifier">F_CTRL</span> &lt;= <span class="identifier">Data_in</span>(4); 
+</div>          <span class="vhdlword">elsif</span>  (<span class="identifier">SEL</span> = <span class="vhdlstr">&quot;011&quot;</span>) <span class="vhdlword">then</span> <span class="identifier">F_CTRL</span> &lt;= <span class="identifier">Data_in</span>(3); 
+<div class="shaded">          <span class="vhdlword">elsif</span>  (<span class="identifier">SEL</span> = <span class="vhdlstr">&quot;010&quot;</span>) <span class="vhdlword">then</span> <span class="identifier">F_CTRL</span> &lt;= <span class="identifier">Data_in</span>(2); 
+</div>          <span class="vhdlword">elsif</span>  (<span class="identifier">SEL</span> = <span class="vhdlstr">&quot;001&quot;</span>) <span class="vhdlword">then</span> <span class="identifier">F_CTRL</span> &lt;= <span class="identifier">Data_in</span>(1); 
+<div class="shaded">          <span class="vhdlword">elsif</span>  (<span class="identifier">SEL</span> = <span class="vhdlstr">&quot;000&quot;</span>) <span class="vhdlword">then</span> <span class="identifier">F_CTRL</span> &lt;= <span class="identifier">Data_in</span>(0); 
+</div>          <span class="vhdlword">else</span>   <span class="identifier">F_CTRL</span> &lt;= <span class="vhdlstr">'0'</span>; 
+<div class="shaded">          <span class="vhdlword">end</span> <span class="vhdlword">if</span>; 
+</div>      <span class="vhdlword">end</span> <span class="vhdlword">if</span>; 
+<div class="shaded">    <span class="vhdlword">end</span> <span class="vhdlword">process</span> <span class="identifier">my_mux</span>; 
+</div><span class="vhdlword">end</span> <span class="identifier">mux_8to1_ce_arch</span>; 
+<div class="shaded">          </div></pre>
+</td></tr></table>
+
+<hr>
+
+
+Generated on 6 Sep 2021 0:13:26 with <a
+href="http://www.volkerschatz.com/hardware/vhdocl.html">VHDocL</a>
+V? (use install script to install properly)
+
+</body>
+</html>

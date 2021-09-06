@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>./ch4/listing_4_15.vhdl</title>
+    <link rel="stylesheet" type="text/css" href="../style/vhdocl.css">
+</head>
+<body>
+
+<table border="0" width="100%"><tr><td align="left">
+
+</td><td align="center">
+<a href="../index.html">Home</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../hierarchy.html">Hierarchy</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../packages.html">Packages</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../entities.html">Entities</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../instantiations.html">Instantiations</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../sources.html">Sources</a>
+
+</td><td align="right">
+
+</td></tr></table>
+
+<hr>
+
+
+<h1>Source file ch4/listing_4_15.vhdl</h1>
+
+<p><a href="../../ch4/listing_4_15.vhdl">Link to file</a></p>
+<table border="0" cellpadding="0"><tr><td><pre>
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 
+10 
+11 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+19 
+20 
+21 
+</pre></td><td width="15"></td><td>
+<pre class="vhdlcode">
+<div class="shaded"><span class="vhdldecl">library</span> <span class="vhdlieee">IEEE</span>; 
+</div><span class="vhdldecl">use</span> <span class="vhdlieee">IEEE</span>.<span class="vhdlieee">std_logic_1164</span>.<span class="vhdlword">all</span>; 
+<div class="shaded"> 
+</div><span class="vhdlcom">--entity</span> 
+<div class="shaded"><span class="vhdldecl">entity</span> <span class="identifier">my_4t1_mux2</span> <span class="vhdlword">is</span> 
+</div>    <span class="vhdlword">port</span> (<span class="identifier">D3</span>,<span class="identifier">D2</span>,<span class="identifier">D1</span>,<span class="identifier">D0</span> : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic</span>; 
+<div class="shaded">          <span class="identifier">SEL</span>         : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic_vector</span>(1 <span class="vhdlword">downto</span> 0); 
+</div>          <span class="identifier">MX_OUT</span>      : <span class="vhdlio">out</span> <span class="vhdlieee typeid">std_logic</span>); 
+<div class="shaded"><span class="vhdlword">end</span> <span class="identifier">my_4t1_mux2</span>; 
+</div> 
+<div class="shaded"><span class="vhdldecl">architecture</span> <span class="identifier">mux4t1_2</span> <span class="vhdlword">of</span> <span class="identifier">my_4t1_mux2</span> <span class="vhdlword">is</span> 
+</div><span class="vhdlword">begin</span> 
+<div class="shaded">    <span class="vhdlword">with</span> <span class="identifier">SEL</span> <span class="vhdlword">select</span> 
+</div>        <span class="identifier">MX_OUT</span> &lt;= <span class="identifier">D3</span> <span class="vhdlword">when</span> <span class="vhdlstr">&quot;11&quot;</span>, 
+<div class="shaded">                  <span class="identifier">D2</span> <span class="vhdlword">when</span> <span class="vhdlstr">&quot;10&quot;</span>, 
+</div>                  <span class="identifier">D1</span> <span class="vhdlword">when</span> <span class="vhdlstr">&quot;01&quot;</span>, 
+<div class="shaded">                  <span class="identifier">D0</span> <span class="vhdlword">when</span> <span class="vhdlstr">&quot;00&quot;</span>, 
+</div>                  <span class="vhdlstr">'0'</span> <span class="vhdlword">when</span> <span class="vhdlword">others</span>; 
+<div class="shaded"><span class="vhdlword">end</span> <span class="identifier">mux4t1_2</span>; 
+</div> 
+<div class="shaded"> 
+</div></pre>
+</td></tr></table>
+
+<hr>
+
+
+Generated on 6 Sep 2021 0:13:26 with <a
+href="http://www.volkerschatz.com/hardware/vhdocl.html">VHDocL</a>
+V? (use install script to install properly)
+
+</body>
+</html>
