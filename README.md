@@ -1,3 +1,4 @@
+[![](https://img.shields.io/badge/docs-readme-blue.svg)](https://thebigg.github.io/free_range_vhdl/)
 # Learning VHDL
 
 This repo is a collection of examples  as I learn VHDL from [Free Range VHDL](http://freerangefactory.org/pdf/df344hdh4h8kjfh3500ft2/free_range_vhdl.pdf) 
