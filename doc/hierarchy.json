@@ -21,6 +21,13 @@
       "instantiations": [
       ]
     },
+    "work.d_ff_r-my_d_ff_r": {
+      "entity": "work.d_ff_r",
+      "architecture": "my_d_ff_r",
+      "file": "ch7/listing_7_3.vhdl",
+      "instantiations": [
+      ]
+    },
     "work.exercise_1_a-exercise_1_a_arch": {
       "entity": "work.exercise_1_a",
       "architecture": "exercise_1_a_arch",
@@ -139,6 +146,13 @@
       "file": "ch4/exercise_1_b.vhdl",
       "instantiations": [
       ]
+    },
+    "work.t_ff_s-my_t_ff_s": {
+      "entity": "work.t_ff_s",
+      "architecture": "my_t_ff_s",
+      "file": "ch7/listing_7_4.vhdl",
+      "instantiations": [
+      ]
     }
   },
   [
@@ -147,6 +161,7 @@
     "work.circuit1-circuit1_arc",
     "work.d_ff-my_d_ff",
     "work.d_ff_ns-my_d_ff_ns",
+    "work.d_ff_r-my_d_ff_r",
     "work.exercise_1_a-exercise_1_a_arch",
     "work.exercise_1_a_case-exercise_1_a_case_arch",
     "work.heartbeat-behaviour",
@@ -163,6 +178,7 @@
     "work.my_system-behav",
     "work.my_xor-behav",
     "work.ONE_A-ARCH_ONE_A",
-    "work.ONE_B-ARCH_ONE_B"
+    "work.ONE_B-ARCH_ONE_B",
+    "work.t_ff_s-my_t_ff_s"
   ]
 ]
