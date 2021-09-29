@@ -1,0 +1,3 @@
+[submodule "vhdldoc"]
+	path = vhdldoc
+	url = git@github.com:thebigG/vhdldoc.git
