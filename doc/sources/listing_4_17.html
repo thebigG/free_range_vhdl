@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>./ch4/listing_4_17.vhdl</title>
+    <link rel="stylesheet" type="text/css" href="../style/vhdocl.css">
+</head>
+<body>
+
+<table border="0" width="100%"><tr><td align="left">
+
+</td><td align="center">
+<a href="../index.html">Home</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../hierarchy.html">Hierarchy</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../packages.html">Packages</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../entities.html">Entities</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../instantiations.html">Instantiations</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../sources.html">Sources</a>
+
+</td><td align="right">
+
+</td></tr></table>
+
+<hr>
+
+
+<h1>Source file ch4/listing_4_17.vhdl</h1>
+
+<p><a href="../../ch4/listing_4_17.vhdl">Link to file</a></p>
+<table border="0" cellpadding="0"><tr><td><pre>
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 
+10 
+11 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+19 
+20 
+21 
+</pre></td><td width="15"></td><td>
+<pre class="vhdlcode">
+<div class="shaded"><span class="vhdlcom">--libraries</span> 
+</div><span class="vhdldecl">library</span> <span class="vhdlieee">IEEE</span>; 
+<div class="shaded"><span class="vhdldecl">use</span> <span class="vhdlieee">IEEE</span>.<span class="vhdlieee">std_logic_1164</span>.<span class="vhdlword">all</span>; 
+</div> 
+<div class="shaded"><span class="vhdldecl">entity</span> <span class="identifier">my_ckt_f3_concat</span> <span class="vhdlword">is</span> 
+</div>    <span class="vhdlword">port</span> (<span class="identifier">L</span>,<span class="identifier">M</span>, <span class="identifier">N</span>   : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic</span>; 
+<div class="shaded">           <span class="identifier">F3</span>      : <span class="vhdlio">out</span> <span class="vhdlieee typeid">std_logic</span>); 
+</div> 
+<div class="shaded"> <span class="vhdlword">end</span> <span class="identifier">my_ckt_f3_concat</span>; 
+</div> 
+<div class="shaded"> <span class="vhdldecl">architecture</span> <span class="identifier">f3_8</span> <span class="vhdlword">of</span> <span class="identifier">my_ckt_f3_concat</span> <span class="vhdlword">is</span> 
+</div>     <span class="vhdlvar">signal</span> <span class="identifier">t_sig</span> : <span class="vhdlieee typeid">std_logic_vector</span>(2 <span class="vhdlword">downto</span> 0); 
+<div class="shaded"> <span class="vhdlword">begin</span> 
+</div>     <span class="identifier">t_sig</span> &lt;= (<span class="identifier">L</span> &amp; <span class="identifier">M</span> &amp; <span class="identifier">N</span>);  <span class="vhdlcom">--concatenation operator</span> 
+<div class="shaded"> 
+</div>     <span class="vhdlword">with</span> (<span class="identifier">t_sig</span>) <span class="vhdlword">select</span> 
+<div class="shaded">     <span class="identifier">F3</span> &lt;= <span class="vhdlstr">'1'</span> <span class="vhdlword">when</span> <span class="vhdlstr">&quot;000&quot;</span> | <span class="vhdlstr">&quot;110&quot;</span> | <span class="vhdlstr">&quot;111&quot;</span> , 
+</div>               <span class="vhdlstr">'0'</span> <span class="vhdlword">when</span> <span class="vhdlword">others</span>; 
+<div class="shaded"> 
+</div><span class="vhdlword">end</span> <span class="identifier">f3_8</span>; 
+<div class="shaded">     </div></pre>
+</td></tr></table>
+
+<hr>
+
+
+Generated on 28 Sep 2021 21:47:11 with <a
+href="http://www.volkerschatz.com/hardware/vhdocl.html">VHDocL</a>
+V? (use install script to install properly)
+
+</body>
+</html>

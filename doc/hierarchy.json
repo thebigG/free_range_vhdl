@@ -1,0 +1,200 @@
+[
+  {
+    "work.circuit1-circuit1_arc": {
+      "entity": "work.circuit1",
+      "architecture": "circuit1_arc",
+      "file": "ch3/simple_block.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.d_ff-my_d_ff": {
+      "entity": "work.d_ff",
+      "architecture": "my_d_ff",
+      "file": "ch7/listing_7_1.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.d_ff_ns-my_d_ff_ns": {
+      "entity": "work.d_ff_ns",
+      "architecture": "my_d_ff_ns",
+      "file": "ch7/listing_7_2.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.d_ff_r-my_d_ff_r": {
+      "entity": "work.d_ff_r",
+      "architecture": "my_d_ff_r",
+      "file": "ch7/listing_7_3.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.exercise7_1-exercise7_1_arch": {
+      "entity": "work.exercise7_1",
+      "architecture": "exercise7_1_arch",
+      "file": "ch7/exercise_1.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.exercise_1_a-exercise_1_a_arch": {
+      "entity": "work.exercise_1_a",
+      "architecture": "exercise_1_a_arch",
+      "file": "ch5/exercise_1_a.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.exercise_1_a_case-exercise_1_a_case_arch": {
+      "entity": "work.exercise_1_a_case",
+      "architecture": "exercise_1_a_case_arch",
+      "file": "ch5/exercise_1_a_case.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.heartbeat-behaviour": {
+      "entity": "work.heartbeat",
+      "architecture": "behaviour",
+      "file": "misc/heartbeat.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.mux_8t1-mux_8t1_arc": {
+      "entity": "work.mux_8t1",
+      "architecture": "mux_8t1_arc",
+      "file": "ch5/listing_5_8.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.mux_8to1_ce-mux_8to1_ce_arch": {
+      "entity": "work.mux_8to1_ce",
+      "architecture": "mux_8to1_ce_arch",
+      "file": "ch5/listing_5_9.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.my_4t1_mux-mux4t1": {
+      "entity": "work.my_4t1_mux",
+      "architecture": "mux4t1",
+      "file": "ch4/listing_4_1_2.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.my_4t1_mux2-mux4t1_2": {
+      "entity": "work.my_4t1_mux2",
+      "architecture": "mux4t1_2",
+      "file": "ch4/listing_4_15.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.my_circuit-my_circuit_arc": {
+      "entity": "work.my_circuit",
+      "architecture": "my_circuit_arc",
+      "file": "ch4/listing_4_1.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.my_ckt_f3-f3_1": {
+      "entity": "work.my_ckt_f3",
+      "architecture": "f3_1",
+      "file": "ch4/listing_4_8.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.my_ckt_f3_concat-f3_8": {
+      "entity": "work.my_ckt_f3_concat",
+      "architecture": "f3_8",
+      "file": "ch4/listing_4_17.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.my_ent-my_arch": {
+      "entity": "work.my_ent",
+      "architecture": "my_arch",
+      "file": "ch3/std_libs.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.my_ex-silly_example": {
+      "entity": "work.my_ex",
+      "architecture": "silly_example",
+      "file": "ch5/listing_5_6.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.my_example-my_soln_exam": {
+      "entity": "work.my_example",
+      "architecture": "my_soln_exam",
+      "file": "ch5/listing_5_11.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.my_fsml-fsml": {
+      "entity": "work.my_fsml",
+      "architecture": "fsml",
+      "file": "ch8/listing_8_1.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.my_system-behav": {
+      "entity": "work.my_system",
+      "architecture": "behav",
+      "file": "ch5/listing_5_4.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.my_xor-behav": {
+      "entity": "work.my_xor",
+      "architecture": "behav",
+      "file": "ch5/listing_5_3.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.ONE_A-ARCH_ONE_A": {
+      "entity": "work.ONE_A",
+      "architecture": "ARCH_ONE_A",
+      "file": "ch4/exercise_1_a.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.ONE_B-ARCH_ONE_B": {
+      "entity": "work.ONE_B",
+      "architecture": "ARCH_ONE_B",
+      "file": "ch4/exercise_1_b.vhdl",
+      "instantiations": [
+      ]
+    },
+    "work.t_ff_s-my_t_ff_s": {
+      "entity": "work.t_ff_s",
+      "architecture": "my_t_ff_s",
+      "file": "ch7/listing_7_4.vhdl",
+      "instantiations": [
+      ]
+    }
+  },
+  [
+  ],
+  [
+    "work.circuit1-circuit1_arc",
+    "work.d_ff-my_d_ff",
+    "work.d_ff_ns-my_d_ff_ns",
+    "work.d_ff_r-my_d_ff_r",
+    "work.exercise7_1-exercise7_1_arch",
+    "work.exercise_1_a-exercise_1_a_arch",
+    "work.exercise_1_a_case-exercise_1_a_case_arch",
+    "work.heartbeat-behaviour",
+    "work.mux_8t1-mux_8t1_arc",
+    "work.mux_8to1_ce-mux_8to1_ce_arch",
+    "work.my_4t1_mux-mux4t1",
+    "work.my_4t1_mux2-mux4t1_2",
+    "work.my_circuit-my_circuit_arc",
+    "work.my_ckt_f3-f3_1",
+    "work.my_ckt_f3_concat-f3_8",
+    "work.my_ent-my_arch",
+    "work.my_ex-silly_example",
+    "work.my_example-my_soln_exam",
+    "work.my_fsml-fsml",
+    "work.my_system-behav",
+    "work.my_xor-behav",
+    "work.ONE_A-ARCH_ONE_A",
+    "work.ONE_B-ARCH_ONE_B",
+    "work.t_ff_s-my_t_ff_s"
+  ]
+]

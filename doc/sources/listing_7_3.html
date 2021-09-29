@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>./ch7/listing_7_3.vhdl</title>
+    <link rel="stylesheet" type="text/css" href="../style/vhdocl.css">
+</head>
+<body>
+
+<table border="0" width="100%"><tr><td align="left">
+
+</td><td align="center">
+<a href="../index.html">Home</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../hierarchy.html">Hierarchy</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../packages.html">Packages</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../entities.html">Entities</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../instantiations.html">Instantiations</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../sources.html">Sources</a>
+
+</td><td align="right">
+
+</td></tr></table>
+
+<hr>
+
+
+<h1>Source file ch7/listing_7_3.vhdl</h1>
+
+<p><a href="../../ch7/listing_7_3.vhdl">Link to file</a></p>
+<table border="0" cellpadding="0"><tr><td><pre>
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 
+10 
+11 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+19 
+20 
+21 
+</pre></td><td width="15"></td><td>
+<pre class="vhdlcode">
+<div class="shaded"><span class="vhdlcom">-- FET D Flip-flop model with active-high asynchronous reset input. --</span> 
+</div><span class="vhdldecl">library</span> <span class="vhdlieee">IEEE</span>; 
+<div class="shaded"><span class="vhdldecl">use</span> <span class="vhdlieee">IEEE</span>.<span class="vhdlieee">std_logic_1164</span>.<span class="vhdlword">all</span>; 
+</div> 
+<div class="shaded"><span class="vhdldecl">entity</span> <span class="identifier">d_ff_r</span> <span class="vhdlword">is</span> 
+</div>   <span class="vhdlword">port</span> (    <span class="identifier">D</span>,<span class="identifier">R</span>  :  <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic</span>; 
+<div class="shaded">             <span class="identifier">CLK</span>  :  <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic</span>; 
+</div>             <span class="identifier">Q</span>    :  <span class="vhdlio">out</span> <span class="vhdlieee typeid">std_logic</span>); 
+<div class="shaded"><span class="vhdlword">end</span> <span class="identifier">d_ff_r</span>; 
+</div> 
+<div class="shaded"><span class="vhdldecl">architecture</span> <span class="identifier">my_d_ff_r</span> <span class="vhdlword">of</span> <span class="identifier">d_ff_r</span> <span class="vhdlword">is</span> 
+</div><span class="vhdlword">begin</span> 
+<div class="shaded">    <span class="identifier">dff</span>: <span class="vhdlword">process</span>(<span class="identifier">R</span>,<span class="identifier">CLK</span>) 
+</div>    <span class="vhdlword">begin</span> 
+<div class="shaded">        <span class="vhdlword">if</span> (<span class="identifier">R</span>=<span class="vhdlstr">'1'</span>) <span class="vhdlword">then</span> 
+</div>            <span class="identifier">Q</span> &lt;= <span class="vhdlstr">'0'</span>; 
+<div class="shaded">        <span class="vhdlword">elsif</span> (<span class="vhdlieee">falling_edge</span>(<span class="identifier">CLK</span>))  <span class="vhdlword">then</span> 
+</div>           <span class="identifier">Q</span> &lt;= <span class="identifier">D</span>; 
+<div class="shaded">        <span class="vhdlword">end</span> <span class="vhdlword">if</span>; 
+</div>    <span class="vhdlword">end</span> <span class="vhdlword">process</span> <span class="identifier">dff</span>; 
+<div class="shaded"><span class="vhdlword">end</span> <span class="identifier">my_d_ff_r</span>;</div></pre>
+</td></tr></table>
+
+<hr>
+
+
+Generated on 28 Sep 2021 21:47:11 with <a
+href="http://www.volkerschatz.com/hardware/vhdocl.html">VHDocL</a>
+V? (use install script to install properly)
+
+</body>
+</html>

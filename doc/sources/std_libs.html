@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>./ch3/std_libs.vhdl</title>
+    <link rel="stylesheet" type="text/css" href="../style/vhdocl.css">
+</head>
+<body>
+
+<table border="0" width="100%"><tr><td align="left">
+
+</td><td align="center">
+<a href="../index.html">Home</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../hierarchy.html">Hierarchy</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../packages.html">Packages</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../entities.html">Entities</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../instantiations.html">Instantiations</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../sources.html">Sources</a>
+
+</td><td align="right">
+
+</td></tr></table>
+
+<hr>
+
+
+<h1>Source file ch3/std_libs.vhdl</h1>
+
+<p><a href="../../ch3/std_libs.vhdl">Link to file</a></p>
+<table border="0" cellpadding="0"><tr><td><pre>
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 
+10 
+11 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+19 
+20 
+21 
+22 
+23 
+24 
+25 
+26 
+27 
+28 
+29 
+30 
+31 
+32 
+33 
+34 
+</pre></td><td width="15"></td><td>
+<pre class="vhdlcode">
+<div class="shaded"><span class="vhdlcom">--library declaration</span> 
+</div><span class="vhdldecl">library</span> <span class="vhdlieee">IEEE</span>; 
+<div class="shaded"><span class="vhdldecl">use</span> <span class="vhdlieee">IEEE</span>.<span class="vhdlieee">std_logic_1164</span>.<span class="vhdlword">all</span>; <span class="vhdlcom">-- basic IEEE library</span> 
+</div><span class="vhdldecl">use</span> <span class="vhdlieee">IEEE</span>.<span class="vhdlieee">numeric_std</span>.<span class="vhdlword">all</span>;    <span class="vhdlcom">-- IEEE library for the unsigned type and various arithmetic operators</span> 
+<div class="shaded"> 
+</div> 
+<div class="shaded"><span class="vhdlcom">-- WARNING : in general try NOT to use the following libraries</span> 
+</div><span class="vhdlcom">--           because they are not IEEE standard libraries</span> 
+<div class="shaded"><span class="vhdlcom">-- use IEEE.std_logic_arith.all;</span> 
+</div><span class="vhdlcom">-- use IEEE.std_logic_unsigned.all;</span> 
+<div class="shaded"><span class="vhdlcom">-- use IEEE.std_logic_signed</span> 
+</div> 
+<div class="shaded"><span class="vhdlcom">-- entity</span> 
+</div><span class="vhdldecl">entity</span> <span class="identifier">my_ent</span> <span class="vhdlword">is</span> 
+<div class="shaded">    <span class="vhdlword">port</span> ( <span class="identifier">A</span>, <span class="identifier">B</span>, <span class="identifier">C</span> : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic</span>; 
+</div>           <span class="identifier">F</span>       : <span class="vhdlio">out</span> <span class="vhdlieee typeid">std_logic</span>); 
+<div class="shaded"><span class="vhdlword">end</span> <span class="identifier">my_ent</span>; 
+</div> 
+<div class="shaded"><span class="vhdlcom">--architecure</span> 
+</div><span class="vhdldecl">architecture</span> <span class="identifier">my_arch</span> <span class="vhdlword">of</span> <span class="identifier">my_ent</span> <span class="vhdlword">is</span> 
+<div class="shaded">    <span class="vhdlvar">signal</span> <span class="identifier">v1</span>, <span class="identifier">v2</span> : <span class="vhdlieee typeid">std_logic_vector</span> (3 <span class="vhdlword">downto</span> 0); 
+</div>    <span class="vhdlvar">signal</span> <span class="identifier">u1</span>     : <span class="vhdlieee typeid">unsigned</span> (3 <span class="vhdlword">downto</span> 0); 
+<div class="shaded">    <span class="vhdlvar">signal</span> <span class="identifier">i1</span>     : <span class="vhdlieee typeid">integer</span>; 
+</div> 
+<div class="shaded"><span class="vhdlword">begin</span> 
+</div>    <span class="identifier">u1</span> &lt;= <span class="vhdlstr">&quot;1101&quot;</span>; 
+<div class="shaded">    <span class="identifier">i1</span> &lt;= 13; 
+</div>    <span class="identifier">v1</span> &lt;= <span class="vhdlieee typeid">std_logic_vector</span>(<span class="identifier">u1</span>);                         <span class="vhdlcom">-- &quot;1101&quot;</span> 
+<div class="shaded">    <span class="identifier">v2</span> &lt;= <span class="vhdlieee typeid">std_logic_vector</span>(<span class="vhdlieee">to_unsigned</span>(<span class="identifier">i1</span>, <span class="identifier">v2</span>'<span class="identifier">length</span>)); <span class="vhdlcom">-- &quot;1101&quot;</span> 
+</div> 
+<div class="shaded">    <span class="identifier">F</span> &lt;= <span class="vhdlword">NOT</span> (<span class="identifier">A</span> <span class="vhdlword">AND</span> <span class="identifier">B</span> <span class="vhdlword">AND</span> <span class="identifier">C</span>); 
+</div> 
+<div class="shaded"><span class="vhdlword">end</span> <span class="identifier">my_arch</span>; 
+</div> 
+<div class="shaded"></div></pre>
+</td></tr></table>
+
+<hr>
+
+
+Generated on 28 Sep 2021 21:47:11 with <a
+href="http://www.volkerschatz.com/hardware/vhdocl.html">VHDocL</a>
+V? (use install script to install properly)
+
+</body>
+</html>
