@@ -16,3 +16,8 @@ ghdl -r {ENTITY_NAME}
 
 Note that `ch5` can be any directory that has vhdl source code in it.
 
+# Build docs
+```
+./vhdldoc/vhdocl -r .
+```
+You can read the docs at `docs/index.html`

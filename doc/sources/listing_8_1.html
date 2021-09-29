@@ -1,0 +1,155 @@
+<html>
+<head>
+    <title>./ch8/listing_8_1.vhdl</title>
+    <link rel="stylesheet" type="text/css" href="../style/vhdocl.css">
+</head>
+<body>
+
+<table border="0" width="100%"><tr><td align="left">
+
+</td><td align="center">
+<a href="../index.html">Home</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../hierarchy.html">Hierarchy</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../packages.html">Packages</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../entities.html">Entities</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../instantiations.html">Instantiations</a>
+&nbsp;&nbsp; -- &nbsp;&nbsp;
+<a href="../sources.html">Sources</a>
+
+</td><td align="right">
+
+</td></tr></table>
+
+<hr>
+
+
+<h1>Source file ch8/listing_8_1.vhdl</h1>
+
+<p><a href="../../ch8/listing_8_1.vhdl">Link to file</a></p>
+<table border="0" cellpadding="0"><tr><td><pre>
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 
+10 
+11 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+19 
+20 
+21 
+22 
+23 
+24 
+25 
+26 
+27 
+28 
+29 
+30 
+31 
+32 
+33 
+34 
+35 
+36 
+37 
+38 
+39 
+40 
+41 
+42 
+43 
+44 
+45 
+46 
+47 
+48 
+49 
+50 
+51 
+52 
+53 
+54 
+</pre></td><td width="15"></td><td>
+<pre class="vhdlcode">
+<div class="shaded"><span class="vhdlcom">--library declcaration</span> 
+</div><span class="vhdldecl">library</span> <span class="vhdlieee">IEEE</span>; 
+<div class="shaded"><span class="vhdldecl">use</span> <span class="vhdlieee">IEEE</span>.<span class="vhdlieee">std_logic_1164</span>.<span class="vhdlword">all</span>; 
+</div> 
+<div class="shaded"><span class="vhdldecl">entity</span> <span class="identifier">my_fsml</span> <span class="vhdlword">is</span> 
+</div>	<span class="vhdlword">port</span> ( <span class="identifier">TOG_EN</span>   : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic</span>; 
+<div class="shaded">		<span class="identifier">CLK</span>,<span class="identifier">CLR</span> : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic</span>; 
+</div>		<span class="identifier">Z1</span>	: <span class="vhdlio">out</span> <span class="vhdlieee typeid">std_logic</span>); 
+<div class="shaded"> 
+</div><span class="vhdlword">end</span> <span class="identifier">my_fsml</span>; 
+<div class="shaded"> 
+</div><span class="vhdldecl">architecture</span> <span class="identifier">fsml</span> <span class="vhdlword">of</span> <span class="identifier">my_fsml</span> <span class="vhdlword">is</span> 
+<div class="shaded">	<span class="vhdldecl">type</span> <span class="identifier">state_type</span> <span class="vhdlword">is</span> (<span class="identifier">ST0</span>,<span class="identifier">ST1</span>); <span class="vhdlcom">-- enumeration</span> 
+</div>	<span class="vhdlvar">signal</span> <span class="identifier">PS</span>,<span class="identifier">NS</span> : <span class="identifier">state_type</span>; 
+<div class="shaded"> 
+</div><span class="vhdlword">begin</span> 
+<div class="shaded">	<span class="identifier">sync_proc</span>: <span class="vhdlword">process</span>(<span class="identifier">CLK</span>,<span class="identifier">NS</span>,<span class="identifier">CLR</span>) 
+</div>	<span class="vhdlword">begin</span> 
+<div class="shaded">		<span class="vhdlword">if</span>   (<span class="identifier">CLR</span> = <span class="vhdlstr">'1'</span>) <span class="vhdlword">then</span> 
+</div>			<span class="identifier">PS</span> &lt;= <span class="identifier">ST0</span>; 
+<div class="shaded">		<span class="vhdlword">elsif</span> (<span class="vhdlieee">rising_edge</span>(<span class="identifier">CLK</span>)) <span class="vhdlword">then</span> 
+</div>	  	     <span class="identifier">PS</span> &lt;= <span class="identifier">NS</span>; 
+<div class="shaded">		<span class="vhdlword">end</span> <span class="vhdlword">if</span>; 
+</div>    	<span class="vhdlword">end</span> <span class="vhdlword">process</span> <span class="identifier">sync_proc</span>; 
+<div class="shaded"> 
+</div>    <span class="identifier">comb_proc</span>: <span class="vhdlword">process</span>(<span class="identifier">PS</span>, <span class="identifier">TOG_EN</span>) 
+<div class="shaded">    <span class="vhdlword">begin</span> 
+</div>		<span class="identifier">Z1</span> &lt;= <span class="vhdlstr">'0'</span>; 
+<div class="shaded">        <span class="vhdlword">case</span> <span class="identifier">PS</span> <span class="vhdlword">is</span> 
+</div>            <span class="vhdlword">when</span> <span class="identifier">ST0</span> =&gt; 
+<div class="shaded">                <span class="identifier">Z1</span> &lt;= <span class="vhdlstr">'0'</span>; 
+</div>            <span class="vhdlword">if</span> (<span class="identifier">TOG_EN</span> = <span class="vhdlstr">'1'</span>) <span class="vhdlword">then</span> 
+<div class="shaded">                <span class="identifier">NS</span> &lt;= <span class="identifier">ST1</span>; 
+</div>            <span class="vhdlword">else</span> 
+<div class="shaded">                <span class="identifier">NS</span> &lt;= <span class="identifier">ST0</span>; 
+</div>            <span class="vhdlword">end</span> <span class="vhdlword">if</span>; 
+<div class="shaded">			 <span class="vhdlword">when</span> <span class="identifier">ST1</span> =&gt; 
+</div>				 <span class="identifier">Z1</span> &lt;= <span class="vhdlstr">'1'</span>; 
+<div class="shaded">				 <span class="vhdlword">if</span> (<span class="identifier">TOG_EN</span> = <span class="vhdlstr">'1'</span>) <span class="vhdlword">then</span> 
+</div>					 <span class="identifier">NS</span> &lt;= <span class="identifier">ST0</span>; 
+<div class="shaded">				 <span class="vhdlword">else</span> <span class="identifier">NS</span> &lt;= <span class="identifier">ST1</span>; 
+</div>				 <span class="vhdlword">end</span> <span class="vhdlword">if</span>; 
+<div class="shaded">			 <span class="vhdlword">when</span> <span class="vhdlword">others</span> =&gt; 
+</div>				 <span class="identifier">Z1</span> &lt;= <span class="vhdlstr">'0'</span>; 
+<div class="shaded">				 <span class="identifier">NS</span> &lt;= <span class="identifier">ST0</span>; 
+</div>		<span class="vhdlword">end</span> <span class="vhdlword">case</span>; 
+<div class="shaded">	<span class="vhdlword">end</span> <span class="vhdlword">process</span> <span class="identifier">comb_proc</span>; 
+</div> 
+<div class="shaded"><span class="vhdlword">end</span> <span class="identifier">fsml</span>; 
+</div> 
+<div class="shaded"> 
+</div> 
+<div class="shaded"> 
+</div> 
+<div class="shaded"></div></pre>
+</td></tr></table>
+
+<hr>
+
+
+Generated on 28 Sep 2021 21:37:55 with <a
+href="http://www.volkerschatz.com/hardware/vhdocl.html">VHDocL</a>
+V? (use install script to install properly)
+
+</body>
+</html>

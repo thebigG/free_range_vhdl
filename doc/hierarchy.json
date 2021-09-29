@@ -28,6 +28,13 @@
       "instantiations": [
       ]
     },
+    "work.exercise7_1-exercise7_1_arch": {
+      "entity": "work.exercise7_1",
+      "architecture": "exercise7_1_arch",
+      "file": "ch7/exercise_1.vhdl",
+      "instantiations": [
+      ]
+    },
     "work.exercise_1_a-exercise_1_a_arch": {
       "entity": "work.exercise_1_a",
       "architecture": "exercise_1_a_arch",
@@ -119,6 +126,13 @@
       "instantiations": [
       ]
     },
+    "work.my_fsml-fsml": {
+      "entity": "work.my_fsml",
+      "architecture": "fsml",
+      "file": "ch8/listing_8_1.vhdl",
+      "instantiations": [
+      ]
+    },
     "work.my_system-behav": {
       "entity": "work.my_system",
       "architecture": "behav",
@@ -162,6 +176,7 @@
     "work.d_ff-my_d_ff",
     "work.d_ff_ns-my_d_ff_ns",
     "work.d_ff_r-my_d_ff_r",
+    "work.exercise7_1-exercise7_1_arch",
     "work.exercise_1_a-exercise_1_a_arch",
     "work.exercise_1_a_case-exercise_1_a_case_arch",
     "work.heartbeat-behaviour",
@@ -175,6 +190,7 @@
     "work.my_ent-my_arch",
     "work.my_ex-silly_example",
     "work.my_example-my_soln_exam",
+    "work.my_fsml-fsml",
     "work.my_system-behav",
     "work.my_xor-behav",
     "work.ONE_A-ARCH_ONE_A",
