@@ -7,7 +7,7 @@ The `free_range_vhdl/free_range_vhdl.xpr` file is a [vivado](https://www.xilinx.
 
 # To run vhdl code from the shell:
 ```
-export $SRC_DIR=ch5
+export SRC_DIR=ch5
 make
 cd ch5/build
 
