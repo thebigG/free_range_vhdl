@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>f3_1 of work.my_ckt_f3</title>
+    <title>fsm2 of work.my_fsml2</title>
     <link rel="stylesheet" type="text/css" href="../style/vhdocl.css">
 </head>
 <body>
@@ -27,9 +27,9 @@
 <hr>
 
 
-<h1>Architecture f3_1 of <a href="../entities/work.my_ckt_f3.html">work.my_ckt_f3</a></h1>
+<h1>Architecture fsm2 of <a href="../entities/work.my_fsml2.html">work.my_fsml2</a></h1>
 
-<p>Defined in <a href="../sources/listing_4_8.html">ch4/listing_4_8.vhdl</a>&nbsp;&nbsp;&nbsp;<a href="../../ch4/listing_4_8.vhdl">[source file]</a></p>
+<p>Defined in <a href="../sources/listing_8_2.html">ch8/listing_8_2.vhdl</a>&nbsp;&nbsp;&nbsp;<a href="../../ch8/listing_8_2.vhdl">[source file]</a></p>
 <p>
 </p>
 
@@ -42,6 +42,22 @@
 <table class="vhdocltab" border="0" cellpadding="3">
 <tr class="vhdlcode"><td colspan="2"><b><span class="vhdldecl">library</span> <span class="vhdlieee">IEEE</span></b></td></tr>
 <tr class="vhdlcode"><td colspan="2"><span class="vhdldecl">use</span> <span class="vhdlieee">IEEE</span>.<span class="vhdlieee">std_logic_1164</span>.<span class="vhdlword">all</span></td></tr>
+</table>
+
+
+<h2>Type declarations</h2>
+
+<table class="vhdocltab" border="0" cellpadding="3">
+<tr class="vhdlcode archdecl"><td><span class="vhdldecl">type</span></td><td><a name="type:state_type"><b><span class="typeid">state_type</span></b></a></td><td><span class="vhdlword">is</span></td>
+<td>(<span class="identifier">ST0</span>,<span class="identifier">ST1</span>)</td></tr>
+</table>
+
+
+<h2>Processes</h2>
+
+<table class="vhdocltab" border="0" cellpadding="3">
+<tr class="vhdlcode archdecl"><td colspan="5"><b><span class="declid">sync_proc</span></b> (<span class="identifier">CLK</span>,<span class="identifier">NS</span>,<span class="identifier">CLR</span>)</td></tr>
+<tr class="vhdlcode archdecl"><td colspan="5"><b><span class="declid">comb_proc</span></b> (<span class="identifier">PS</span>, <span class="identifier">TOG_EN</span>)</td></tr>
 </table>
 
 

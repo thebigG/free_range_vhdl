@@ -133,6 +133,13 @@
       "instantiations": [
       ]
     },
+    "work.my_fsml2-fsm2": {
+      "entity": "work.my_fsml2",
+      "architecture": "fsm2",
+      "file": "ch8/listing_8_2.vhdl",
+      "instantiations": [
+      ]
+    },
     "work.my_system-behav": {
       "entity": "work.my_system",
       "architecture": "behav",
@@ -191,6 +198,7 @@
     "work.my_ex-silly_example",
     "work.my_example-my_soln_exam",
     "work.my_fsml-fsml",
+    "work.my_fsml2-fsm2",
     "work.my_system-behav",
     "work.my_xor-behav",
     "work.ONE_A-ARCH_ONE_A",

@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>./ch8/listing_8_1.vhdl</title>
+    <title>./ch8/listing_8_2.vhdl</title>
     <link rel="stylesheet" type="text/css" href="../style/vhdocl.css">
 </head>
 <body>
@@ -27,9 +27,9 @@
 <hr>
 
 
-<h1>Source file ch8/listing_8_1.vhdl</h1>
+<h1>Source file ch8/listing_8_2.vhdl</h1>
 
-<p><a href="../../ch8/listing_8_1.vhdl">Link to file</a></p>
+<p><a href="../../ch8/listing_8_2.vhdl">Link to file</a></p>
 <table border="0" cellpadding="0"><tr><td><pre>
  1 
  2 
@@ -85,20 +85,24 @@
 52 
 53 
 54 
+55 
+56 
+57 
+58 
 </pre></td><td width="15"></td><td>
 <pre class="vhdlcode">
 <div class="shaded"><span class="vhdlcom">--library declcaration</span> 
 </div><span class="vhdldecl">library</span> <span class="vhdlieee">IEEE</span>; 
 <div class="shaded"><span class="vhdldecl">use</span> <span class="vhdlieee">IEEE</span>.<span class="vhdlieee">std_logic_1164</span>.<span class="vhdlword">all</span>; 
 </div> 
-<div class="shaded"><span class="vhdldecl">entity</span> <span class="identifier">my_fsml</span> <span class="vhdlword">is</span> 
+<div class="shaded"><span class="vhdldecl">entity</span> <span class="identifier">my_fsml2</span> <span class="vhdlword">is</span> 
 </div>	<span class="vhdlword">port</span> ( <span class="identifier">TOG_EN</span>   : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic</span>; 
 <div class="shaded">		<span class="identifier">CLK</span>,<span class="identifier">CLR</span> : <span class="vhdlio">in</span> <span class="vhdlieee typeid">std_logic</span>; 
-</div>		<span class="identifier">Z1</span>	: <span class="vhdlio">out</span> <span class="vhdlieee typeid">std_logic</span>); 
+</div>		<span class="identifier">Y</span>,<span class="identifier">Z1</span>	: <span class="vhdlio">out</span> <span class="vhdlieee typeid">std_logic</span>); 
 <div class="shaded"> 
-</div><span class="vhdlword">end</span> <span class="identifier">my_fsml</span>; 
+</div><span class="vhdlword">end</span> <span class="identifier">my_fsml2</span>; 
 <div class="shaded"> 
-</div><span class="vhdldecl">architecture</span> <span class="identifier">fsml</span> <span class="vhdlword">of</span> <span class="identifier">my_fsml</span> <span class="vhdlword">is</span> 
+</div><span class="vhdldecl">architecture</span> <span class="identifier">fsm2</span> <span class="vhdlword">of</span> <span class="identifier">my_fsml2</span> <span class="vhdlword">is</span> 
 <div class="shaded">	<span class="vhdldecl">type</span> <span class="identifier">state_type</span> <span class="vhdlword">is</span> (<span class="identifier">ST0</span>,<span class="identifier">ST1</span>); <span class="vhdlcom">-- enumeration</span> 
 </div>	<span class="vhdlvar">signal</span> <span class="identifier">PS</span>,<span class="identifier">NS</span> : <span class="identifier">state_type</span>; 
 <div class="shaded"> 
@@ -135,7 +139,11 @@
 </div>		<span class="vhdlword">end</span> <span class="vhdlword">case</span>; 
 <div class="shaded">	<span class="vhdlword">end</span> <span class="vhdlword">process</span> <span class="identifier">comb_proc</span>; 
 </div> 
-<div class="shaded"><span class="vhdlword">end</span> <span class="identifier">fsml</span>; 
+<div class="shaded">    <span class="vhdlword">with</span> <span class="identifier">PS</span> <span class="vhdlword">select</span> 
+</div>        <span class="identifier">Y</span> &lt;= <span class="vhdlstr">'0'</span> <span class="vhdlword">when</span> <span class="identifier">ST0</span>, 
+<div class="shaded">             <span class="vhdlstr">'1'</span> <span class="vhdlword">when</span> <span class="identifier">ST1</span>, 
+</div>             <span class="vhdlstr">'0'</span> <span class="vhdlword">when</span> <span class="vhdlword">others</span>; 
+<div class="shaded"><span class="vhdlword">end</span> <span class="identifier">fsm2</span>; 
 </div> 
 <div class="shaded"> 
 </div> 
